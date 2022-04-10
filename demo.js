@@ -137,7 +137,7 @@ function get_real_time_data(s_list) {
             if (type == 'q') {
                 const quoteElement = document.createElement('div');
                 quoteElement.className = 'quote';
-                quoteElement.innerHTML = `<b>${data[key].t}</b> ${data[key].bp} ${data[key].ap}`;
+                quoteElement.innerHTML = `<b>${data[key].t}</b> Bid: ${data[key].bp}, Ask: ${data[key].ap}`;
                 quotesElement.appendChild(quoteElement);
 
                 var elements = document.getElementsByClassName('quote');
@@ -149,7 +149,7 @@ function get_real_time_data(s_list) {
             if (type == 't') {
                 const tradeElement = document.createElement('div');
                 tradeElement.className = 'trade';
-                tradeElement.innerHTML = `<b>${data[key].t}</b> ${data[key].p} ${data[key].s}`;
+                tradeElement.innerHTML = `<b>${data[key].t}</b>, Price: ${data[key].p}, Size: ${data[key].s}`;
                 tradesElement.appendChild(tradeElement);
 
                 var elements = document.getElementsByClassName('trade');
