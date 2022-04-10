@@ -11,7 +11,7 @@ function clearBox(elementID) {
 }
 
 function render_chart() {
-    var symbol = document.getElementById("myInput").value.toUpperCase() + 'USD';
+    var symbol = document.getElementById("input").value.toUpperCase() + 'USD';
     symbolList.unshift(symbol);
 
     clearBox('chart');
