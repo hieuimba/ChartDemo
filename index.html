@@ -1,20 +1,38 @@
 <html>
     <head>
-        <title>gridbot demo</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <title>chart demo</title>
         <style>
-            body { background: black; color: lightgreen; font-family: courier; }
-            .panel { width: 600; height: 240; font-size: 20px; padding: 20px; border: solid lightgreen 1px; }
+            body { background: whitesmoke; color: black; font-family: 'Lato', sans-serif; }
+            .panel { width: 600px; height: 240px; font-size: 20px; padding: 20px; border: solid darkgray 0px; }
+            #left { width: 700px; }
+            #right { float: right; }
+            #container { width: 1400px; }
         </style>
+        <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
     </head>
 
     <body>
-        <h1>quotes</h1>
-        <div id="quotes" class="panel"></div>
-        <h1>trades</h1>
-        <div id="trades" class="panel"></div>
-        <h1>bars</h1>
-        <div id="bars" class="panel"></div>
+        <div id="container">
+            <div id="right">
+                <h1>quotes</h1>
+                <div id="quotes" class="panel"></div>
+                <h1>trades</h1>
+                <div id="trades" class="panel"></div>
+            </div>
+            <div id="left">
 
-        <script src="griffin.js"></script>
+                <h1>chart</h1>
+                <div id="chart"></div>
+                <br>
+
+                <input type="text" placeholder="ETH" id="myInput">
+<!--                <button id = "search" type="button" onclick="render_chart();">Get Value</button>-->
+                <button id = "search" type="button" onclick="render_chart();">Search</button>
+            </div>
+        </div>
+        <script src="demo.js"></script>
     </body>
 </html>
