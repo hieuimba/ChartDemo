@@ -1,5 +1,5 @@
-const API_KEY = 'PKOZ6ZXP3KTPP2HJS338';
-const SECRET_KEY = 'ra9JftE7NEOGN80usLaYRJUH4xpEMv1GGsP9q6F1';
+const API_KEY = 'PK3N49S2MC7NFZONHA4D';
+const SECRET_KEY = 'YgJielrSJ2qJhpxFgYtX4sxMiQPTfFMD8GSvcSh2';
 
 let currentBar = {};
 let trades = [];
